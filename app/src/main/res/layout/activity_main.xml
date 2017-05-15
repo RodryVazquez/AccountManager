@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rodrigovazquez.accountmanager.MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textSize="24dp"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <!-- Nombre -->
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtTitle"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="@string/name"
+        android:layout_marginTop="95dp"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <TextView
+        android:id="@+id/txtNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="95dp"
+        android:layout_toRightOf="@id/txtName"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <!-- Email -->
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:layout_marginTop="15dp"
+        android:text="@string/email"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <TextView
+        android:id="@+id/txtEmailValue"
+        android:layout_toRightOf="@id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/txtNameValue"/>
+
+    <!-- Genero -->
+    <TextView
+        android:id="@+id/txtGender"
+        android:layout_below="@id/txtEmail"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:text="@string/gender"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtGenderValue"
+        android:layout_below="@id/txtEmailValue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/txtGender"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Imagen -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginTop="26dp"
+        android:contentDescription="@string/profile_image"
+        android:layout_toRightOf="@id/txtTitle"
+        android:background="@mipmap/ic_launcher"/>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AccountManager</string>
+    <string name="title_activity_splash">Splash Activity</string>
+    <string name="wait">Please wait, fetching details from Google server</string>
+    <string name="my_profile">My Profile</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="gender">Gender</string>
+    <string name="profile_image">Profile Image</string>
+</resources>
