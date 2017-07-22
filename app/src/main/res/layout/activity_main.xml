@@ -13,8 +13,19 @@
         android:text="@string/my_profile"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:textSize="24dp"
+        android:textSize="24sp"
         android:fontFamily="sans-serif-condensed"/>
+
+    <!-- Imagen -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginTop="26dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/profile_image"
+        android:background="@mipmap/ic_launcher"/>
 
     <!-- Nombre -->
     <TextView
@@ -22,22 +33,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/txtTitle"
-        android:textSize="18dp"
+        android:layout_below="@+id/profileImage"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:text="@string/name"
-        android:layout_marginTop="95dp"
         android:fontFamily="sans-serif-condensed"/>
 
     <TextView
         android:id="@+id/txtNameValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtTitle"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="95dp"
         android:layout_toRightOf="@id/txtName"
-        android:textSize="18dp"
+        android:layout_below="@+id/profileImage"
+        android:textSize="18sp"
         android:fontFamily="sans-serif-condensed"/>
 
     <!-- Email -->
@@ -48,7 +57,7 @@
         android:layout_below="@id/txtName"
         android:layout_marginTop="15dp"
         android:text="@string/email"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:layout_alignParentLeft="true"
         android:fontFamily="sans-serif-condensed"/>
@@ -58,7 +67,7 @@
         android:layout_toRightOf="@id/txtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:fontFamily="sans-serif-condensed"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
@@ -71,7 +80,7 @@
         android:layout_marginTop="15dp"
         android:layout_alignParentLeft="true"
         android:textStyle="bold"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:text="@string/gender"
         android:fontFamily="sans-serif-condensed"
         android:layout_width="wrap_content"
@@ -83,20 +92,9 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
         android:layout_toRightOf="@id/txtGender"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:fontFamily="sans-serif-condensed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-
-    <!-- Imagen -->
-    <ImageView
-        android:id="@+id/profileImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtTitle"
-        android:layout_marginTop="26dp"
-        android:contentDescription="@string/profile_image"
-        android:layout_toRightOf="@id/txtTitle"
-        android:background="@mipmap/ic_launcher"/>
 
 </RelativeLayout>

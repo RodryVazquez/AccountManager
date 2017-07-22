@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         //atravez del intent que inicia la actividad
         Intent intent = getIntent();
         textEmail = intent.getStringExtra("email_id");
-        System.out.print(textEmail);
+        System.out.println("Email " + textEmail);
         email.setText(textEmail);
     }
 }
