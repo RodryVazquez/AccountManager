@@ -36,6 +36,7 @@
         android:layout_below="@+id/profileImage"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:layout_marginTop="8dp"
         android:text="@string/name"
         android:fontFamily="sans-serif-condensed"/>
 
